@@ -10,10 +10,6 @@ recurrence_interval_prob(Y, R)
 \item{Y}{years in record}
 
 \item{R}{magnitude ranking}
-
-\item{T}{recurrence interval (note: not an independent input, but a dependent input)}
-
-\item{Prob}{the probability (%) in any given year that a flood of that magnitude will be equaled or exceeded}
 }
 \value{
 the risk in in any given year that a flood of that magnitude will be equaled or exceeded
