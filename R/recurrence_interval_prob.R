@@ -1,18 +1,22 @@
-# Function finds the probability in any given year that a flood of that magnitude will be equaled or exceeded 
-
-# Y = years in records
-# T = recurrence interval (note: not an independent input, but a dependent input)
-# R = magnitude ranking
+#' recurrence_interval
+#'
+#' This function finds the probability in any given year that a flood of that magnitude will be equaled or exceeded
+#' @param Y years in record
+#' @param T recurrence interval (note: not an independent input, but a dependent input)
+#' @param R magnitude ranking
+#' @param Prob the probability (%) in any given year that a flood of that magnitude will be equaled or exceeded
+#' @return the risk in in any given year that a flood of that magnitude will be equaled or exceeded
+#' @author Claudia Flores
 
 recurrence_interval_prob <- function(Y,R){
-  # Body 
+  # Body
   T <- Y + 1
   Prob <- (1)/(T/R)
   # Error checking
-  R = ifelse((R < 0), 
-             return("Ranking must be a positive integer"), 
+  R = ifelse((R < 0),
+             return("Ranking must be a positive integer"),
              R)
-  # Output is the probability 
+  # Output is the probability
   risk <- case_when( # Print the following "" if certain conditions (e.g. <,>,=...) for Prob results are met
     Prob > 0.5 ~ "High",
     Prob == 0.5 ~ "Medium",
