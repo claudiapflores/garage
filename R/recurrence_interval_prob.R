@@ -2,9 +2,7 @@
 #'
 #' This function finds the probability in any given year that a flood of that magnitude will be equaled or exceeded
 #' @param Y years in record
-#' @param T recurrence interval (note: not an independent input, but a dependent input)
 #' @param R magnitude ranking
-#' @param Prob the probability (%) in any given year that a flood of that magnitude will be equaled or exceeded
 #' @return the risk in in any given year that a flood of that magnitude will be equaled or exceeded
 #' @author Claudia Flores
 
