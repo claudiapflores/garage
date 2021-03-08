@@ -2,7 +2,7 @@
 % Please edit documentation in R/recurrence_interval_prob.R
 \name{recurrence_interval_prob}
 \alias{recurrence_interval_prob}
-\title{recurrence_interval}
+\title{recurrence_interval_prob}
 \usage{
 recurrence_interval_prob(Y, R)
 }
@@ -15,7 +15,7 @@ recurrence_interval_prob(Y, R)
 the risk in in any given year that a flood of that magnitude will be equaled or exceeded
 }
 \description{
-This function finds the probability in any given year that a flood of that magnitude will be equaled or exceeded
+This function determines the risk from finding the probability in any given year that a flood of that magnitude will be equaled or exceeded
 }
 \author{
 Claudia Flores
