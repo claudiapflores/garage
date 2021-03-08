@@ -6,6 +6,7 @@
 #' @return the risk in in any given year that a flood of that magnitude will be equaled or exceeded
 #' @author Claudia Flores
 
+
 recurrence_interval_prob <- function(Y,R){
   # Body
   T <- Y + 1
