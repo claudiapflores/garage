@@ -1,6 +1,6 @@
-#' recurrence_interval
+#' recurrence_interval_prob
 #'
-#' This function finds the probability in any given year that a flood of that magnitude will be equaled or exceeded
+#' This function determines the risk from finding the probability in any given year that a flood of that magnitude will be equaled or exceeded
 #' @param Y years in record
 #' @param R magnitude ranking
 #' @return the risk in in any given year that a flood of that magnitude will be equaled or exceeded
