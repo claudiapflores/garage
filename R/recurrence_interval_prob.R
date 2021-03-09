@@ -5,6 +5,7 @@
 #' @param R magnitude ranking
 #' @return the risk in in any given year that a flood of that magnitude will be equaled or exceeded
 #' @author Claudia Flores
+#' @export
 
 
 recurrence_interval_prob <- function(Y,R){
