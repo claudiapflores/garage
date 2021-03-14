@@ -1,3 +1,22 @@
+# Function to test
+recurrence_interval_prob <- function(Y,R){
+  # Body
+  T <- Y + 1
+  Prob <- (1)/(T/R)
+  # Error checking
+  R = ifelse((R < 0),
+             return("Ranking must be a positive integer"),
+             R)
+  # Output is the probability
+  risk <- case_when( # Print the following "" if certain conditions (e.g. <,>,=...) for Prob results are met
+    Prob > 0.5 ~ "High",
+    Prob == 0.5 ~ "Medium",
+    Prob < 0.5 ~ "Low"
+  )
+  return(risk)
+}
+
+
 # Test that contains a test data frame for the function recurrence_interval_prob
 
 test_that("test_recurrence_interval_prob" ,
@@ -7,7 +26,7 @@ test_that("test_recurrence_interval_prob" ,
           expect_length(rip_test_data$Y,5) # Expected column length should be five
           expect_true(min(rip_test_data$Y) > 0) # The number of years on record should be greater than 0 and not negative
           expect_true(length(rip_test_data$R) == max(rip_test_data$Y)) # The column length of R should equal to the values or max value in column Y
-          #expect_equal(recurrence_interval_prob(Y = 5, R = 3),"Medium")
+          expect_equal(recurrence_interval_prob(Y = 5, R = 3),"Medium")
           })
 
 
