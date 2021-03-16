@@ -1,4 +1,4 @@
-#Load predominant_diatom function
+#Load predominant_diatom function:
 predominant_diatom = function(p_contentration, si_concentration,
                               lake_temp,
                               p_min_ast = 0.01, p_min_cyc = 0.2,
