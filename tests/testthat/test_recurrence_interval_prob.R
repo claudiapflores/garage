@@ -1,21 +1,5 @@
-# Function to test
-recurrence_interval_prob <- function(Y,R){
-  # Body
-  T <- Y + 1
-  Prob <- (1)/(T/R)
-  # Error checking
-  R = ifelse((R < 0),
-             return("Ranking must be a positive integer"),
-             R)
-  # Output is the probability
-  risk <- case_when( # Print the following "" if certain conditions (e.g. <,>,=...) for Prob results are met
-    Prob > 0.5 ~ "High",
-    Prob == 0.5 ~ "Medium",
-    Prob < 0.5 ~ "Low"
-  )
-  return(risk)
-}
-
+# Load package to test recurrence_interval_prob function
+library(garage)
 
 # Test that contains a test data frame for the function recurrence_interval_prob
 
